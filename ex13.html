@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mouseover e Mouseout </title>
+</head>
+<body>
+    <div id="meuDiv" style="width: 100px; height: 100px; background-color: rosybrown;"> Passe o mouse aqui! </div>
+
+    <script>
+        const div = document.getElementById("meuDiv");
+
+        //Manipulando o evento mouseover
+        div.addEventListener("mouseover", function(){
+            div.style.backgroundColor = "royalblue"; //Muda a cor do fundo
+        });
+
+        //Manipulando o evento mouseout
+        div.addEventListener("mouseout", function(){
+            div.style.backgroundColor = "rosybrown"; //Restaura a cor de fundo
+        });
+    </script>
+</body>
+</html>
