@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Múltiplos de 5 - Do While </title>
+</head>
+<body>
+    <h1> Múltiplos de 5 (1 a 100) </h1>
+    <div id="resultado"></div>
+    <script>
+        let resultadoDiv = document.getElementById("resultado");
+        let numerosMultiplos = "";
+
+        let i = 1;
+        do {
+            if (i % 5 == 0){
+                numerosMultiplos += i + "<br>";
+            }
+            i++;
+        } while (i <= 100)
+        resultadoDiv.innerHTML = numerosMultiplos;
+    </script>
+</body>
+</html>
